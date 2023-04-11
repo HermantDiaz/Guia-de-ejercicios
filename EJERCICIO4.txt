@@ -1,0 +1,28 @@
+// importamos la libreria Scanner
+import java.util.Scanner;
+
+public class ejercicio4 {
+    public static void main(String[] args) throws Exception {
+        
+        // 4- Determine la raíz Cuadrada de un número cualquiera.
+        
+
+        // declaramos variables
+        double numero, raiz;
+
+        //llamamos a la libreria= teclado
+        Scanner teclado = new Scanner(System.in);
+
+
+        System.out.println("******Programa para calcular la raiz cuadrada de un numero cualquiera******");
+        System.out.print("Escriba un numero: ");
+          numero = teclado.nextDouble();
+
+        //operacion
+
+        raiz = Math.sqrt(numero);
+
+        System.out.println("La riz cuadrada de " +numero +" es: " +raiz);
+        
+    }
+}

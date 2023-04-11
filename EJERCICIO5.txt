@@ -1,0 +1,54 @@
+// importamos la libreria Scanner
+import java.util.Scanner;
+import java.util.function.DoubleBinaryOperator;
+
+public class ejercicio5 {
+    public static void main(String[] args) throws Exception {
+        
+        // Evaluar la Función Y= 5X^4 + 2X^3 + 3X^2 + 7 para el valor de
+        //1- X=1;
+        //2- X un número cualquiera.
+
+        //declaramos las varibles
+        Double x, y;
+        int opcion = 0;
+
+        Scanner teclado = new Scanner(System.in);
+
+
+        System.out.println("Evaluar la Función Y= 5X^4 + 2X^3 + 3X^2 + 7");
+        System.out.println("1- X=1;");
+        System.out.println("2- X un número cualquiera.");
+        System.out.print("Escriba una opcion (1-2): ");
+        opcion = teclado.nextInt();
+
+        switch (opcion){
+
+            case 1:
+            x=1.0;
+            //opercion X=1
+            y= 5 * Math.pow(x,4) + 2 * Math.pow(x,3) + 3 * Math.pow(x,2) + 7;
+
+            System.out.println("El valor de Y es: " +y);
+
+                break;
+
+            case 2:
+
+            System.out.print("Escriba el valor de X: ");
+            x = teclado.nextDouble();
+
+            y= 5 * Math.pow(x,4) + 2 * Math.pow(x,3) + 3 * Math.pow(x,2) + 7;
+
+            System.out.println("El valor de Y es: " +y);
+
+                break;
+
+            default:
+
+            System.out.print("Escriba una opcion correcta");
+
+        }
+
+    }
+}

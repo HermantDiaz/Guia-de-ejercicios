@@ -1,0 +1,54 @@
+// importamos la libreria Scanner
+import java.util.Scanner;
+
+public class ejercicio3 {
+    public static void main(String[] args) throws Exception {
+        
+        // Determine el valor de Y= X*C-2 donde C es una constante con valor C=2.5.
+        //a) Sabiendo que X=2;
+        //b) Considerando a X un valor cualquiera.
+        
+
+        // declaramos variables
+        double y, x, c=2.5;
+        int opcion=0;
+
+        //llamamos a la libreria= teclado
+        Scanner teclado = new Scanner(System.in);
+
+
+        System.out.println("Determine el valor de Y= X*C-2 donde C es una constante con valor C=2.5.");
+        System.out.println("1- Sabiendo que X=2;");
+        System.out.println("2- Considerando a X un valor cualquiera.");
+        System.out.print("Escriba una opcion (1-2): ");
+        opcion = teclado.nextInt();
+
+
+        //Menu con condicionales
+      if (opcion == 1){
+        
+        //OPERACION
+        x=2;
+        y = x*c-2;
+
+        System.out.println("El valor de Y es: " +y);
+  
+      } else if (opcion == 2){
+
+        System.out.print("Escriba el valor de X: ");
+        x = teclado.nextDouble();
+
+        //OPERACION
+        y = x*c-2;
+
+        System.out.println("El valor de Y es: " +y);
+
+      } else {
+        
+        System.out.println("Elija una opcion correcta");
+
+      }
+        
+
+    }
+}

@@ -1,0 +1,54 @@
+// importamos la liberia Scanner 
+import java.util.Scanner;
+
+public class ejercicio2{
+  public static void main (String [] args){
+      //2- Determinar el Perímetro de una circunferencia y el área de un círculo.
+
+
+      //Declaramos las variables que necesitamos
+      double radio, perimetro, area;
+      int opcion=0;
+
+      //llamamos a la libreria= teclado
+      Scanner teclado = new Scanner(System.in);
+
+
+      //Pequeño menu
+      System.out.println("****Programa para calcular el perimetro y area de una circunferencia********");
+      System.out.println("1- Perimetro de una circunferencia");
+      System.out.println("2- Area de un circulo");
+      System.out.print("Elija una opcion(1-2): ");
+      opcion = teclado.nextInt();
+
+      //Menu con condicionales
+      if (opcion == 1){
+        
+        System.out.println("Escriba el radio de la circunferencia: ");
+        radio = teclado.nextDouble();
+
+        //operacion segun formula del perimetro
+        perimetro = 2 * Math.PI *radio;
+        //Math.pi para representar pi
+
+        System.out.println("El perimetro de la circunferencia es: " +perimetro);
+
+
+      } else if (opcion == 2){
+
+        System.out.println("Escriba el radio de la circunferencia: ");
+        radio = teclado.nextDouble();
+
+        //operacion segun formula del area de una circunferencia
+        area = Math.PI * Math.pow(radio, 2);
+
+        System.out.println("El area de la circunferencia es: " +area);
+
+      } else {
+        
+        System.out.println("Elija una opcion correcta");
+
+      }
+
+  }
+}
