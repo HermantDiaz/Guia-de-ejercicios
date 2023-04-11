@@ -1,0 +1,39 @@
+// importamos la libreria Scanner
+import java.util.Scanner;
+
+public class ejercicio1 {
+    public static void main(String[] args) throws Exception {
+        
+        // Determinar el área de un rectángulo que tiene por base “B” y por altura “H”, 
+        // imprima la base, la altura y su área.
+        
+
+        // declaramos variables
+        float base, altura, area;
+        
+        //llamamos a la libreria= teclado
+        Scanner teclado = new Scanner(System.in);
+
+
+        System.out.println("**************Programa para calcular el area de un rectangulo*********");
+        System.out.print("Base del rectangulo: ");
+        base = teclado.nextFloat();
+
+
+        System.out.print("Altura del rectangulo: ");
+        altura = teclado.nextFloat();
+
+
+        //OPERACION (formula del area de un rectangulo)
+
+          area = base * altura;
+
+        
+        // imprimimos area, base y altura
+
+        System.out.println("El area del rectangulo es: " +area);
+        System.out.println("Su base es: " +base);
+        System.out.println("Su altura es: " +altura);
+
+    }
+}
