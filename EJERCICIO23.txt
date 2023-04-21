@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ejercicio23 {
+    public static void main (String[] Args){
+        /*23.Escribir un programa que lea la calificación de un alumno 
+             e imprima el mensaje de aprobado si su calificación es mayor o igual a 60, 
+             en caso contrario imprima reprobado.
+        */
+        Scanner tc = new Scanner(System.in);
+        int calificacion;
+
+        System.out.print("Escriba su calificacion: ");
+          calificacion = tc.nextInt();
+
+        if(calificacion >= 60){
+            System.out.println("APROBADO");
+        } else{
+            System.out.println("REPROBADO");
+        }
+        tc.close();
+    }
+}

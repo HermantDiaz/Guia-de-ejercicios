@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class ejercicio42 {
+
+	public static void main(String[] args) {
+		// 42. Leer “N” números distintos de 0, si el número leído es positivo
+		// súmelo en caso contrario cuéntelo. 
+
+		int n=0, numeros, suma=0, contador=0;
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.print("¿cuantos numeros va a escribir? :");
+		n = teclado.nextInt();
+		
+		
+		
+		for(int i = 1; i <= n; i++) {
+			
+			System.out.print("Escriba un numero: ");
+			numeros = teclado.nextInt();
+			
+			if (numeros >=0) {
+			
+				suma += numeros;
+			
+			} else {
+				
+				contador = contador + 1;
+			}
+		
+		}
+		
+		System.out.println("La suma de los numeros es:" +suma);
+		System.out.println("numeros negativos: " +contador);
+
+        teclado.close();
+	}
+
+}

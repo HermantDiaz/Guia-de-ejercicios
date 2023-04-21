@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ejercicio32 {
+    public static void main (String[]Args){
+
+
+public class ejercicio33 {
+    public static void main (String[]Args){
+
+        /*33. Escriba un programa que imprima los números del 1 al 100.*/
+
+     
+        for (int i=1; i<= 100; i++) {
+			
+			System.out.println(i);
+			
+		}
+    
+    }
+}
+

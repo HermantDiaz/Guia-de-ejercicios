@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class ejercicio14 {
+  public static void main (String [] Args){
+
+    // 14. Determinar la solución lineal que tiene la forma ax + b =0 donde a y b son números reales.
+
+    float a, b, x;
+
+    Scanner tc = new Scanner(System.in);
+
+
+    System.out.println("****Programa para determinar la solucion que tiene la forma ax + b =0****");
+    System.out.print("Ingrese el valor de a: ");
+        a = tc.nextFloat();
+    System.out.print("Ingrese el valor de b: ");
+        b = tc.nextFloat();
+
+    // despejando, obtenemos que x valdra -b/a
+    // operacion
+
+    x = -b/a;
+
+    if(a == 0 || b == 0){
+        System.out.println("La ecuacion no tiene solucion o tiene solucion infinita");
+    } else{
+            System.out.println("La solucion lineal para la forma " +a +"x + " +b +" = 0, tiene como resultado: " +x);
+          }
+
+  }    
+    
+}

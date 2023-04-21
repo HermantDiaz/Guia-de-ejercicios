@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ejercicio26_2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese un número de tres dígitos: ");
+        int num = scanner.nextInt();
+        
+        int x = num / 100;
+        int y = (num % 100) / 10;
+        int z = num % 10;
+        System.out.println("El número ingresado es " + num);
+        System.out.println("El dígito de las centenas es " + x);
+        System.out.println("El dígito de las decenas es " + y);
+        System.out.println("El dígito de las unidades es " + z);
+        scanner.close();
+    }
+}

@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ejercicio8 {
+    public static void main (String[] args) throws Exception{
+
+        // 8. Calcular el área de un triángulo conociendo sus tres lados.
+
+        Scanner tc = new Scanner(System.in);
+
+        double b, h, area;
+
+        do
+        {
+            System.out.print("Digite la base del triangulo: ");
+            b = tc.nextDouble();
+
+            System.out.print("Digite la altura del triangulo: ");
+            h = tc.nextDouble();
+
+        } while (b == 0 || h == 0);
+        
+        //operacion
+        area = b * h/2;
+
+        System.out.println( "El area del triangulo es: " +area);
+
+
+        tc.close();
+    }
+}

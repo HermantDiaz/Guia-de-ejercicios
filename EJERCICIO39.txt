@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class ejercicio39 {
+    public static void main (String[] args) throws Exception{
+
+        /*  39. Escriba un programa que lea las notas de “N” alumnos y calcule cuantos aprobados
+                 y desaprobados hay (está aprobado si la nota es mayor de 60).*/
+
+        Scanner tc = new Scanner(System.in);
+
+        double n, notas;
+        int aprobados=0, desaprobados =0;
+
+        System.out.print("cuantos notas va a ingresar?:  ");
+        n = tc.nextDouble();
+
+
+        //operacion
+        for (int i=1; i <= n; i++){
+
+            System.out.print("Escriba la " +i +" nota: ");
+            notas = tc.nextDouble();
+
+            if(notas >= 60){
+                aprobados++;
+            }
+            else{
+                desaprobados++;
+            }
+
+        }
+
+        System.out.println("Numeros de alumnos aprobados: " +aprobados);
+        System.out.println("Numero de alumnos desaprobados: " +desaprobados);
+
+        tc.close();
+    }
+}

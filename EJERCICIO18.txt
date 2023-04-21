@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ejercicio18 {
+    public static void main (String [] Args ){
+        /*
+          Leer un número de tres cifras e imprimirlo en orden invertido 
+          Ejemplo Entrada: 567   Salida 765.
+         */
+    Scanner tc = new Scanner(System.in);
+    int num, primer_digito =0, resultado=0;
+
+    System.out.print("INGRESE UN NUMERO: ");
+      num = tc.nextInt();
+
+      //operacion
+      while(num > 0){
+        primer_digito = num % 10;
+        resultado = resultado*10 +primer_digito;
+        num= num/10;
+      }
+      System.out.println(resultado);
+    }
+}

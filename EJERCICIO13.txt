@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class ejercicio13 {
+   public static void main(String [] Args){
+
+
+    // 13. Convertir Y yardas, F pies y I pulgadas a Centímetros. 
+
+    Scanner tc = new Scanner(System.in);
+
+    double yardas = 91.44, pies=30.48, pulgadas=2.54, Y, F, L, cm;
+    int opcion;
+
+    //MENU
+
+    System.out.println("******Programa para convertir yardas, pies, pulgadas a CM**********");
+    System.out.println("1.Convertir yardas a cm");
+    System.out.println("2.Convertir pies a cm");
+    System.out.println("3.Convertir pulgadas a cm");
+    System.out.print("Elija una opcion: ");
+        opcion = tc.nextInt();
+
+    switch (opcion){
+
+        case 1:
+
+            System.out.print("Escriba el numero de yardas a convertir a cm: ");
+            Y = tc.nextDouble();
+
+            cm = Y * yardas;
+
+            System.out.println(Y + " yardas es igual a " +cm + " centimetros.");
+
+            break;
+
+
+        case 2:
+
+            System.out.print("Escriba el numero de pies a convertir a cm: ");
+            F = tc.nextDouble();
+
+            cm = F * pies;
+
+            System.out.println(F + " pies es igual a " +cm + " centimetros.");
+
+            break;
+
+
+        case 3:
+
+            System.out.print("Escriba el numero de pulgadas a convertir a cm: ");
+            L = tc.nextDouble();
+
+            cm = L * pulgadas;
+
+            System.out.println(L + " pulgadas es igual a " +cm + " centimetros.");
+
+            break;
+
+        default:
+
+            System.out.println("Escriba una opcion correcta");
+
+    }
+   } 
+}

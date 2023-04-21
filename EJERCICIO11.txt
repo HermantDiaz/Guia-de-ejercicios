@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ejercicio11 {
+    public static void main (String[] args) throws Exception{
+
+        // 11. Obtener el valor del Coseno de un número cualquiera.
+
+        Scanner tc = new Scanner(System.in);
+
+        double grados, radianes, resultado;
+
+
+        System.out.println("**********Programa para calcular el coseno de un numero cualquiera********");
+
+        System.out.print("Digite el numero: ");
+        grados = tc.nextDouble();
+
+        
+        //operacion
+        radianes = grados * (Math.PI/180);
+        resultado = Math.cos(radianes);
+
+        System.out.println( "El coseno del numero: " +grados +" es igual a " +resultado);
+
+    }
+    
+}

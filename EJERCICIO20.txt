@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ejercicio20 {
+    public static void main (String[] Args){
+        //20. Escriba un programa que lea un número cualquiera e imprima si es par o impar.
+        Scanner tc = new Scanner(System.in);
+        int numero;
+
+        System.out.print("Escriba un numero: ");
+          numero = tc.nextInt();
+
+        if (numero % 2 == 0){
+          System.out.print("Su numero es par");
+        }else {
+            System.out.print("Su numero es impar");
+        }
+
+    }
+}

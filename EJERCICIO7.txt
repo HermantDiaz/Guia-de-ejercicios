@@ -1,0 +1,23 @@
+﻿import java.util.Scanner;
+
+public class ejercicio7 {
+    public static void main (String[] args) throws Exception{
+
+        // 7. Convertir X grados Fahrenheit a grados Celsius. Celsius= 5/9 (Fahrenheit -323).
+
+        Scanner tc = new Scanner(System.in);
+
+        Double fahrenheit, celsius;
+
+        System.out.println("************Programa para convertir grados Fahrenheit a grados Celsius **********");
+        System.out.print("Ingrese los grados Fahrenheit a convertir: ");
+        fahrenheit = tc.nextDouble();
+
+        //operacion
+        celsius = (fahrenheit - 32 )* 5/9;
+        
+
+        System.out.println( fahrenheit + " grados fahrenheit es equivalente a " +  celsius +" grados celcius");
+
+    }
+}

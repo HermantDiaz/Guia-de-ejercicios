@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ejercicio21 {
+    public static void main (String[] Args){
+        //21. Escriba un programa que lea un número que verifique si X es negativo que calcule X^4
+        //    en caso contrario que calcule X^2.
+
+
+        Scanner tc = new Scanner(System.in);
+        double x,resultado;
+
+        System.out.print("Escriba un numero: ");
+          x = tc.nextInt();
+
+          if (x < 0)
+          {
+              resultado = Math.pow(x,4);
+
+              System.out.println("El resultado es: " + resultado);
+          }
+          else
+          {
+            resultado = Math.pow(x,2);
+
+            System.out.println("El resultado es: " + resultado);
+          }
+
+          tc.close();
+    }
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ejercicio26_1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese un número de dos dígitos: ");
+
+        int num = scanner.nextInt();
+        
+        int x = num / 10;
+        int y = num % 10;
+        System.out.println("El número ingresado es " + num);
+        System.out.println("El dígito de las decenas es " + x);
+        System.out.println("El dígito de las unidades es " + y);
+        scanner.close();
+    }
+}

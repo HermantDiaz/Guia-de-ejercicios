@@ -1,0 +1,23 @@
+﻿import java.util.Scanner;
+
+public class ejercicio6 {
+    public static void main (String[] args) throws Exception{
+
+        // 6. Convertir N kilogramos a Libras.
+
+        Scanner tc = new Scanner(System.in);
+
+        Double n, kilogramo = 0.453592, libra;
+
+        System.out.println("************Programa para convertir N kilogramos a libras**********");
+        System.out.print("Ingrese la Cantidad de kilogramos a convertir: ");
+        n = tc.nextDouble();
+
+        //operacion
+
+        libra = n / kilogramo;
+
+        System.out.println(n + " kilogramos es equivalente a " + libra + " libras.");
+
+    }
+}

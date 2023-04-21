@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ejercicio41 {
+    public static void main (String[] args) throws Exception{
+
+        /*  41. Calcule e imprima el producto de “N” números.
+        */
+
+        Scanner tc = new Scanner(System.in);
+
+        int n, resultado=1;
+
+        System.out.print("Escriba un numero: ");
+        n = tc.nextInt();
+
+
+        //operacion
+        for (int i=1; i <= n; i++){
+           resultado *= i;
+        }
+        System.out.print("La multiplicacion del producto de ´n´ numeros es igual : " +resultado);
+        tc.close();
+    }
+}

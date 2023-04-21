@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class ejercicio12 {
+    public static void main (String[] args) throws Exception{
+
+        // 12. Obtener el promedio de N notas.
+
+        Scanner tc = new Scanner(System.in);
+
+        double n, notas, suma=0, promedio;
+
+
+        System.out.println("**********Programa para calcular el promedio de n notas********");
+
+        System.out.print("Digite el numero de notas que quiere promediar: ");
+        n = tc.nextDouble();
+
+        
+        //operacion
+        for (int i=1; i <= n; i++){
+
+            System.out.print("Escriba la " +i +" nota: ");
+            notas = tc.nextDouble();
+
+            suma = suma + notas;
+
+        }
+        
+        promedio = suma/n;
+
+        System.out.println("El promedio de las notas es: " +promedio);
+
+    }
+}

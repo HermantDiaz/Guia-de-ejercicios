@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ejercicio29 {
+   public static void main(String[]Args){
+    /*29.Escriba un programa que lea dos números enteros positivos distintos y escriba la diferencia
+     entre el mayor y el menor. Asegúrese que su programa escriba
+      por ejemplo 8 si los números son 10 y 2 o bien 2 y 10. */
+
+      Scanner tc = new Scanner(System.in);
+
+      int n1, n2, resultado;
+      
+      System.out.print("Escriba un numero: ");
+        n1 = tc.nextInt();
+      System.out.print("Escriba otro numero: ");
+        n2 = tc.nextInt();
+
+    //operacion
+    resultado = n1 -n2;
+
+    if(resultado < 0){
+        resultado = resultado * -1;
+    }
+
+    System.out.println("La diferencia entre los numero es de: " +resultado);
+
+    tc.close();
+
+   }
+}

@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class ejercicio43 {
+    public static void main (String[] args) throws Exception{
+
+        /*  43. En un curso de 25 alumnos se practican 3 exámenes los datos de cada estudiante
+         se registran así: Nombre, Nota1, Nota2, Nota3. Escriba un programa que calcule por cada 
+         estudiante el promedio de las notas.
+        */
+
+
+    // en este caso seran 5 alumnos par no hacer tan tedioso el programa
+    Scanner tc = new Scanner(System.in);
+    String[] Nombres = new String[5];
+    double[] Nota1 = new double[5];
+    double[] Nota2 = new double[5];
+    double[] Nota3 = new double[5];
+
+    System.out.println("**********Programa para calcular el promedio de los estudiantes********");
+
+    //datos
+    for (int i=0; i < 5; i++){
+
+        System.out.print("Escriba el nombre del ["+ (i+1) + "] alumno: ");
+        Nombres[i] = tc.next();
+        System.out.print("Escriba la primera nota: ");
+        Nota1[i] = tc.nextDouble();
+        System.out.print("Escriba la segunda nota: ");
+        Nota2[i] = tc.nextDouble();
+        System.out.print("Escriba la tercera nota: ");
+        Nota3[i] = tc.nextDouble();
+
+    }
+
+    //tabla y operacion
+    System.out.println();
+    System.out.printf( "|%13s|%13s|%13s|%13s|%13s|%13s|%n","Num.", "Nombre" , "Nota1" , "Nota2", "Nota3", "Promedio");
+
+    double[] promedio = new double[5];
+
+    for (int i=0; i < 5; i++){
+
+        promedio[i] = (Nota1[i] + Nota2[i] + Nota3[i]) / 3;
+        System.out.printf( "|%13s|%13s|%13s|%13s|%13s|%13s|%n", i+1 , Nombres[i] , Nota1[i] , Nota2[i], Nota3[i], promedio[i]);
+
+    }
+    tc.close();
+    }
+}

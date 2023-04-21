@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class ejercicio19 {
+    public static void main (String[] Args){
+        //Escriba un programa que lea la edad de una persona e imprima es votante dado que tiene 16 o más años de edad.
+        Scanner tc = new Scanner(System.in);
+        int edad;
+
+        System.out.print("Escriba su edad: ");
+          edad = tc.nextInt();
+
+        if(edad >= 16){
+            System.out.println("Es votante");
+        } else{
+            System.out.println("No es votante");
+        }
+
+    }
+}
+

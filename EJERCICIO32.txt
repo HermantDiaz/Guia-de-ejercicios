@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class ejercicio32 {
+    public static void main (String[]Args){
+
+        /*32. Las calificaciones de los alumnos en un instituto son consideradas de la siguiente forma:
+                A es 90 o más.
+                B es al menos 80 pero menos de 90.
+                C es al menos 70 pero menos de 80.
+                D es al menos 65 pero menos de 70.
+                E es menos de 65.
+                Escriba un programa que considere la entrada de nota en número e imprima su codificación en letra.*/
+
+      Scanner tc = new Scanner(System.in);
+      int nota;  
+
+            System.out.print("Ingrese su nota: ");
+            nota = tc.nextInt();
+
+
+            if (nota >= 90)
+            {
+                System.out.println("Su calificacion es de A");
+            }
+            else if (nota >= 80 && nota < 90)
+            {
+                System.out.println("Su calificacion es de B");
+            }
+            else if (nota >= 70 && nota < 80)
+            {
+                System.out.println("Su calificacion es de C");
+            } 
+            else if (nota >= 65 && nota < 70)
+            {
+                System.out.println("Su calificacion es de D");
+            }
+            else if (nota <= 65 )
+            {
+                System.out.println("Su calificacion es de E");
+            }
+        tc.close();
+    }
+}

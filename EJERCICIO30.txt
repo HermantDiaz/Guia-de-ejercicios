@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class ejercicio30 {
+    public static void main (String[] Args){
+        /*30. Escriba un programa que tenga como entrada la lectura de dos números llamados “X” y “Y”
+              y que imprima una salida que corresponda a cada uno de los pares.
+
+            a) (-X, -Y) Entonces sumar los cuadrados de cada componente.
+            b)(-X, Y) Entonces restar al valor Y el valor de X.
+            c) (X, -Y) Entonces dividir X entre Y
+            d)(X, Y) Entonces verificar si X es mayor que Y, si es así sumarle a X el valor de Y, si no obtener la raíz cuadrada de X.
+        */
+
+        Scanner tc = new Scanner(System.in);
+        Double X, Y, C;
+
+        System.out.print("Escriba el primer numero:  ");
+          X = tc.nextDouble();
+        System.out.print("Escriba el segundo numero:  ");
+          Y = tc.nextDouble();
+
+          if ( X < 0 && Y < 0)
+          {
+            C = Math.pow(X,2) + Math.pow(Y,2);
+            System.out.println("La suma de los cuadrados de los exponentes es igual a: " +C);
+
+          }  else if(X < 0 && Y > 0) {
+            C = X - Y;
+            System.out.println("La resta de los numeros es igual a: " +C);
+
+          }  else if ( X > 0 && Y < 0) {
+            C = X/Y;
+            System.out.println("La division es igual a: " +C);
+
+          } else if( X > 0 && Y > 0){
+            if(X > Y){
+                C = X+Y;
+                System.out.println("La Suma es igual a: " +C);
+            } else{
+                C = Math.sqrt(X);
+                System.out.println("La raiz cuadrada es igual a: " +C);
+            }
+          }
+        
+          tc.close();
+ }
+}

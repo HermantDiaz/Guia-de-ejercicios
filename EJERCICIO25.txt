@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ejercicio25 {
+    public static void main (String[] Args){
+        /*23.Escribir un programa que lea un número cualquiera e imprima 
+             si el número leído es divisible por tres.
+        */
+        Scanner tc = new Scanner(System.in);
+        int num;
+
+        System.out.print("Escriba un numero: ");
+          num = tc.nextInt();
+
+        if(num % 3 == 0){
+            System.out.println("El numero es divisible por 3");
+        } else{
+            System.out.println("El numero no es divisible");
+        }
+        tc.close();
+    }
+}

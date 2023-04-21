@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class ejercicio31 {
+    public static void main (String[]Args){
+
+        /*31. UN triángulo es equilátero si posee sus tres lados iguales,
+              es Isósceles si tiene solamente dos lados iguales 
+              y es escaleno cuando todos sus lados son desiguales. 
+              Escribir un programa que lea las dimensiones de los lados del triángulo
+              y presente como salida el mensaje de su clasificación de triangulo. */
+
+      Scanner tc = new Scanner(System.in);
+      int a, b, c;  
+
+            System.out.print(" Escribe el valor del primer lado: ");
+            a = tc.nextInt();
+
+            System.out.print(" Escribe el valor del segundo lado: ");
+            b = tc.nextInt();
+
+            System.out.print(" Escribe el valor del tercer lado: ");
+            c = tc.nextInt();
+
+
+            if (a == b && b == c)
+            {
+                System.out.println(" Su triangulo es equilatero");
+            }
+            else if (a == b || b == c || a == c)
+            {
+                System.out.println(" Su triangulo es isoceles");
+            }
+            else {
+                System.out.println(" Su triangulo es escaleno");
+            } 
+        tc.close();
+    }
+}

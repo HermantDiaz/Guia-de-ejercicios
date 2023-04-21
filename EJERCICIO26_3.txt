@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ejercicio26_3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Ingrese un número de cuatro dígitos: ");
+
+        int num = scanner.nextInt();
+
+        int x = num / 1000;
+        int y = (num % 1000) / 100;
+        int z = (num % 100) / 10;
+        int w = num % 10;
+        System.out.println("El número ingresado es " + num);
+        System.out.println("El dígito de los millares es " + x);
+        System.out.println("El dígito de las centenas es " + y);
+        System.out.println("El dígito de las decenas es " + z);
+        System.out.println("El dígito de las unidades es " + w);
+        scanner.close();
+    }
+}

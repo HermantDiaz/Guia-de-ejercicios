@@ -1,0 +1,31 @@
+﻿import java.util.Scanner;
+
+public class ejercicio10 {
+    public static void main (String[] args) throws Exception{
+
+        // 10. Determine el valor de la fuerza de un cuerpo que tiene por masa “M” y aceleración “A”.
+
+        Scanner tc = new Scanner(System.in);
+
+        double fuerza, masa, aceleración;
+
+
+        System.out.println("**********Programa para calcular la fuerza de un cuerpo********");
+
+        do
+        {
+            System.out.print("Digite la masa del cuerpo: ");
+            masa = tc.nextDouble();
+
+            System.out.print("Digite la aceleracion del cuerpo: ");
+            aceleración = tc.nextDouble();
+
+        } while (masa == 0 || aceleración == 0);
+        
+        //operacion
+        fuerza = masa * aceleración;
+
+        System.out.println( "La fuerza del cuerpo es de: " +fuerza +" N");
+
+    }
+}

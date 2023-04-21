@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class ejercicio45 {
+    public static void main (String[] args) throws Exception{
+
+        /*  45.De una lista de n voltajes escriba el programa que calcule el voltaje mínimo, 
+              el voltaje máximo y el promedio de todos.
+        */
+     Scanner scan = new Scanner(System.in);
+     int n;
+
+     System.out.print("Ingrese el numero de voltajes a ingresar: ");
+     n = scan.nextInt();
+
+     double[] voltaje = new double[n];
+     double maximo = 0, minimo = 999999999, promedio = 0, suma = 0;
+
+     for(int i=0; i < n; i++){
+        System.out.print("Ingrese el voltaje [" + (i+1) + "]: ");
+        voltaje[i] = scan.nextDouble();
+
+        if( voltaje[i] > maximo){
+            maximo = voltaje[i];
+        } 
+        if( voltaje[i] < minimo){
+            minimo = voltaje[i];
+        }
+        
+        suma += voltaje[i];
+        promedio = suma/n ;
+     }
+
+     System.out.println("Voltaje maximo: " +maximo);
+     System.out.println("Voltaje minimo: " +minimo);
+     System.out.println("Promedio de los voltajes: " +promedio);
+
+    scan.close();
+    }
+}

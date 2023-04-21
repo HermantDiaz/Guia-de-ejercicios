@@ -1,0 +1,31 @@
+﻿import java.util.Scanner;
+
+public class ejercicio9 {
+    public static void main (String[] args) throws Exception{
+
+        // 9. Calcular el volumen de un cilindro conociendo su radio y altura.
+
+        Scanner tc = new Scanner(System.in);
+
+        double radio=0, altura, volumen;
+
+
+        System.out.println("**********Programa para calcular el volumen de un cilindro********");
+
+        do
+        {
+            System.out.print("Digite el radio del cilindro: ");
+            radio = tc.nextDouble();
+
+            System.out.print("Digite la altura del cilindro: ");
+            altura = tc.nextDouble();
+
+        } while (radio == 0 || altura == 0);
+        
+        //operacion
+        volumen = Math.PI * Math.pow(radio, 2) *  altura;
+
+        System.out.println( "El volumen del cilindro es: " +volumen);
+
+    }
+}

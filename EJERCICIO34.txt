@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ejercicio34 {
+
+	public static void main(String[] args) {
+		
+		/*34. Escriba un programa que lea “n” números enteros y que los imprima.*/
+
+		int n;
+		Scanner tc = new Scanner(System.in);
+		
+		System.out.print("Escriba el valor de n: ");
+		n = tc.nextInt();
+		
+
+		for (int i=1; i<= n; i++) {
+			
+			System.out.println(i);
+		}
+
+        tc.close();
+	}
+}

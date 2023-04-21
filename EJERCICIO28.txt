@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ejercicio28 {
+    public static void main (String[] Args){
+        /*28. Escriba un programa que lea dos números enteros como entrada y escriba 
+        el mensaje signos opuestos si y solo si uno de los enteros es positivo y el otro negativo. */
+
+        Scanner tc = new Scanner(System.in);
+        int num_1, num_2;
+
+        System.out.print("Escriba el primer numero:  ");
+          num_1 = tc.nextInt();
+        System.out.print("Escriba el segundo numero:  ");
+          num_2 = tc.nextInt();
+
+          if (num_1 == 0 || num_2 == 0)
+          {
+            System.out.println("Los signos son iguales");
+          }  else if(num_1 > 0 && num_2 > 0) {
+            System.out.println("Los signos son iguales");
+          }  else if (num_1 < 0  || num_2 < 0) {
+            System.out.println("Los signos son opuestos");
+          }
+        
+          tc.close();
+ }
+}
